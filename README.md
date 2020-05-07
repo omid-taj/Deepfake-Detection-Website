@@ -22,6 +22,6 @@
 19. After you are logged in you will be redirected to the evaluation page. 
 20. Find the file on your laptop and click on the Evaluate button.
 21. You will see the name of your file and (preparing) beside it.The file is being evaluated.
-22. Once the evaluation is finished the name will be changed to a blue link on the website that you can download(you will have to relaod).
+22. Once the evaluation is finished the name will be changed to a blue link on the website that you can download(you will have to reload).
 
 
