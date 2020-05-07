@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Evalutaion Page
+        </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'css/eval.css' %}" type="text/css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <script src="custom-file.js"></script>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="Menu-Div">
+                        <a href="/accounts/login/" style="color: white"><button id="bt1" class="btn btn-block btn-dark">
+                            Login</button></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="Menu-Div">
+                         <a href="/detection/" style="color: white"><button id="bt1" class="btn btn-block btn-dark">
+                            Evaluation</button></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="Menu-Div">
+                       <a href="/accounts/logout/" style="color: white"><button id="bt1" class="btn btn-block btn-dark">
+                            Logout</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img id="main-img" class="img-fluid" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1504&q=80" alt="">
+                    <div class="jumbotron">
+                        <h4 class="display-4">Evaluation Page</h4>
+                        <p class="lead">Upload Your Video To Start Evaluation</p>
+                    </div>
+                    <div class="card" style="height: 200px;width: 400px;">
+                        <div class="card-body">
+                            <form id="up-sec" method="post"  enctype="multipart/form-data">
+                                {% csrf_token %}
+                                <input type="file" id="myFile" name="myFile">
+          
+                                <div class="mt-3">
+                                  <button type="submit" class="btn btn-primary float-right">Start Evaluation</button>
+                                </div>
+                              </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <ul>
+                        {% for file in files %}
+                            {% if file.result %}
+                                <li><a href="{{ file.result }} " download>{{ file.name }}</a>
+                                </li>
+                            {% else %}
+                                <li>{{ file.name }} (preparing)
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+           
+    </body>
+</html>

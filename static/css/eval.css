@@ -1,0 +1,36 @@
+#bt1{
+    padding: 25px;
+    font-size: 1.2em;
+    margin-top: 10px ;
+}
+.jumbotron{
+    position: absolute ;
+    bottom: 62%;
+    inline-size: 97.5%;
+    block-size: auto;
+    color: skyblue;
+    font-family: sans-serif;
+}
+.input-group{
+    position: absolute;
+    bottom: 40%;
+    inline-size: 60%;
+    left: 18%;
+
+}
+.img{
+    width: 100%;
+}
+.card{
+    position: absolute;
+    bottom: 15%;
+    left: 30%;
+    color: skyblue;
+    background-color: lightslategrey;
+    align-items: center;
+    
+
+}
+#up-sec{
+    top:50%;
+}

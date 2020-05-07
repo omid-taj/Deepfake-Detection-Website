@@ -1,0 +1,72 @@
+#bt1{
+    padding: 25px;
+    font-size: 1.2em;
+    margin-top: 10px ;
+}
+
+#main-img{
+    width: auto;
+}
+.jumbotron{
+    position: absolute ;
+    bottom: 62%;
+    inline-size: 97.5%;
+    block-size: auto;
+    color: skyblue;
+    font-family: sans-serif;
+}
+.main-subtitle{
+    position: absolute ;
+    bottom:76%;
+    left: 22%;
+    font-size: 2.2em;
+    color: white;
+    font-family: sans-serif;
+}
+.sign-in{
+    position: absolute;
+    bottom: 58%;
+    left: 33%;
+    color: skyblue;
+    font-size: 1.5em;
+}
+
+.input-group{
+    position: absolute;
+    left: 32%;
+    bottom: 52%;
+    inline-size: 30%;
+}
+.input-group-prepend{
+    background-color: silver;
+    align-items: center;
+    
+}
+#inp-1{
+    position: absolute;
+    left: 32%;
+    bottom: 40%;
+    inline-size: 30%;
+}
+#start-button{
+    bottom: 22%;
+    left: 40%;
+    position: absolute;
+    padding: 15px;
+    font-size: 1.3em;
+}
+.sign-up{
+   
+    bottom: 15%;
+    left: 44%;
+    position: absolute;
+    color:skyblue;
+    font-size: 0.8em;
+}
+.card{
+    position: absolute;
+    bottom: 6%;
+    left: 30%;
+    background-color:#CFD8DC ;
+}
+
