@@ -1,7 +1,7 @@
 absl-py==0.4.0
 asgiref==3.2.7
 astor==0.7.1
-certifi==2018.11.29
+certifi==2022.12.7
 cffi==1.12.1
 click==7.1.2
 cmake==3.12.0
